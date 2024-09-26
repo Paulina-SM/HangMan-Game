@@ -1,0 +1,10 @@
+table
+chair
+cat
+dog
+pencil
+bottle
+control
+vampire
+book
+piece
