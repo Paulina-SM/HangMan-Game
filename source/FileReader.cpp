@@ -1,4 +1,4 @@
-#include "FileReader.h"
+#include "../headers/FileReader.h"
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -11,7 +11,8 @@ void FileReader::readFile(string nameFile) {
     while (getline(fptr, word)) {
         totalWords.push_back(word);
     }
-    fptr.close();
+  
+    fptr.close();  
 }
 
 int FileReader::numWords() {

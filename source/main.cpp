@@ -4,7 +4,7 @@
 #include <iostream>
 #include <fstream>
 #include <string>
-#include "HangMan.h"
+#include "../headers/HangMan.h"
 
 using namespace std;
 
@@ -13,11 +13,12 @@ int main()
 {   
     bool stop = false;
     char letter;
+    
+    
+    HangMan hang("../data/datos.txt"); 
     cout << "THE HANGMAN GAME!\n"
         << "Press any letter to continue\n";
     cin >> letter;
-    HangMan hang("datos.txt");
-    
     while (!stop) {
         
         cout << hang.getCurrentStatus();

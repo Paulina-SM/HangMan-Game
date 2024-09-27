@@ -139,16 +139,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="FileReader.cpp" />
-    <ClCompile Include="HangMan.cpp" />
+    <ClCompile Include="source\FileReader.cpp" />
+    <ClCompile Include="source\HangMan.cpp" />
+    <ClCompile Include="source\main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="datos.txt" />
+    <Text Include="data\datos.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="FileReader.h" />
-    <ClInclude Include="HangMan.h" />
+    <ClInclude Include="headers\FileReader.h" />
+    <ClInclude Include="headers\HangMan.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

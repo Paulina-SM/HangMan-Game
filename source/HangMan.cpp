@@ -1,5 +1,5 @@
-#include "HangMan.h"
-#include "FileReader.h"
+#include "../headers/HangMan.h"
+#include "../headers/FileReader.h"
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -64,12 +64,11 @@ bool HangMan::wordFound() {
 
 string HangMan::getCurrentStatus() {
 	string status = "Errors : " + to_string(attempts) ;
-	status += "\n " + wordGuessed() + "\n";
+	//status += "\n " + wordGuessed() + "\n";
 	status += "letters used : ";
 	for (int i = 0; i < wrongs.size(); ++i) {
 		status.push_back(wrongs[i]);
 		status += + " ";
-		
 	}
 
 	status += "\n";
