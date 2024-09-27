@@ -23,15 +23,16 @@ int main()
         
         cout << hang.getCurrentStatus();
 
-        if (hang.wordFound() || hang.getAttempts() == 3) {
+        if (hang.wordFound() || hang.getAttempts() == 6) {
             system("cls");
 
-            if (hang.getAttempts() == 3) {
+            if (hang.getAttempts() == 6) {
                 cout << "You lost " << endl;
             }
             else {
-                cout << "You win. the word was: " << hang.getWord() << endl;
+                cout << "You win " << endl;
             }
+            cout << "the word was : " << hang.getWord() << endl << endl;
             cout << "Press q to stop" << endl;
             cin >> letter;
             stop = 'q' == tolower(letter);

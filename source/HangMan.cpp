@@ -51,7 +51,7 @@ string HangMan::wordGuessed() {
 		else
 			status += "_ ";
 	}
-	status += "\n" + word;
+	//status += "\n" + word;
 	if (guessed == word.size())
 		found = true;
 	return status;
@@ -64,7 +64,7 @@ bool HangMan::wordFound() {
 
 string HangMan::getCurrentStatus() {
 	string status = "Errors : " + to_string(attempts) ;
-	//status += "\n " + wordGuessed() + "\n";
+	status += "\n " + wordGuessed() + "\n";
 	status += "letters used : ";
 	for (int i = 0; i < wrongs.size(); ++i) {
 		status.push_back(wrongs[i]);

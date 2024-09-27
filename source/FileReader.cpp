@@ -20,5 +20,7 @@ int FileReader::numWords() {
 }
 
 string FileReader::newWord() {
+    srand(time(0));
+
     return totalWords.at((rand() % totalWords.size()));
 }
